@@ -8,10 +8,10 @@ const Food = (props) => {
       <img src={img} alt="" />
       <div className="food-info">
         <p className="food-name">{name}</p>
-        <p>{price}Tk</p>
+        <p>Price: {price}Tk</p>
       </div>
       <button className="btn-cart">
-        <p>Add To Cart</p>
+        <p>Add to Cart</p>
       </button>
     </div>
   );
