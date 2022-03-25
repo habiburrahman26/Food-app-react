@@ -1,0 +1,62 @@
+[
+  {
+    "id": "f1",
+    "name": "Chicken Chess Burger",
+    "price": "300",
+    "img": "https://media.istockphoto.com/photos/juicy-hamburger-on-white-background-picture-id1206323282?k=20&m=1206323282&s=612x612&w=0&h=yatlq6BHRCCvoTzFZLSwaJc0O8Quct_tRPWtH0dj9Fc="
+  },
+  {
+    "id": "f2",
+    "name": "Chicken Burger",
+    "price": "180",
+    "img": "https://food.fnr.snd.com/content/dam/images/food/fullset/2017/5/10/0/FNM_060117-Smashburger-Style-Burgers-Recipe_s4x3.jpg.rend.hgtvcom.616.462.suffix/1494459418304.jpeg"
+  },
+  {
+    "id": "f3",
+    "name": "Beef Burger",
+    "price": "180",
+    "img": "https://www.qsrmagazine.com/sites/default/files/styles/story_page/public/news-image/sonic-launches-first-fast-food-mushroom-blended-burger.jpg?itok=GL9jGvdi"
+  },
+  {
+    "id": "f4",
+    "name": "Chicken Fries",
+    "price": "140",
+    "img": "https://cdn.sanity.io/images/czqk28jt/prod_bk_us/840fba2112775ceeff32c96d1ac01131b7e96a03-1333x1333.png?w=320&q=40&fit=max&auto=format"
+  },
+  {
+    "id": "f5",
+    "name": "Pepperoni Pizza",
+    "price": "380",
+    "img": "https://images.contentstack.io/v3/assets/bltbb619fd5c667ba2d/blt2094c59e43e6f946/60ce79bbe1b3f7481347ddb0/Pizza.jpg"
+  },
+  {
+    "id": "f6",
+    "name": "Pepperoni Pizza WithMashroom",
+    "price": "480",
+    "img": "https://media.istockphoto.com/photos/pepperoni-pizza-with-mushroom-isolated-on-white-background-picture-id896919842"
+  },
+  {
+    "id": "f7",
+    "name": "Coca Cola",
+    "prce": "30",
+    "img": "https://media.istockphoto.com/photos/classic-cocacola-can-picture-id465133878?k=20&m=465133878&s=612x612&w=0&h=vgcvEz4ts5WZQOhKMaKon8mIQVbr20-JhP7DKgo_wD0="
+  },
+  {
+    "id": "f8",
+    "name": "Sprite",
+    "price": "30",
+    "img": "https://static-01.daraz.com.bd/p/e742bd2d61998650389f1162178ed211.jpg"
+  },
+  {
+    "id": "f9",
+    "name": "Milkshake",
+    "prce": "120",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Strawberry_milk_shake_%28cropped%29.jpg/1200px-Strawberry_milk_shake_%28cropped%29.jpg"
+  },
+  {
+    "id": "f10",
+    "name": "Fried Chicken",
+    "price": "180",
+    "img": "https://www.tbsnews.net/sites/default/files/styles/big_3/public/images/2021/10/22/fried_chicken-1024x536.png?itok=68u0wwbr"
+  }
+]
