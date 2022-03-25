@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 
 const Food = (props) => {
-  return (
-    <div>
-        
-    </div>
-  )
-}
+  const [foods, setFoods] = useState([]);
 
-export default Food
+  useEffect(() => {
+    fetch('foods.json')
+      .then((res) => res.json())
+      .then((data) => setFoods(data));
+  }, []);
+  return <div></div>;
+};
+
+export default Food;
