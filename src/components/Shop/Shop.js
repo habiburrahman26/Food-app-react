@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import Food from '../Food/Food';
 
-const Food = (props) => {
+const Shop = (props) => {
   const [foods, setFoods] = useState([]);
 
   useEffect(() => {
@@ -8,7 +9,9 @@ const Food = (props) => {
       .then((res) => res.json())
       .then((data) => setFoods(data));
   }, []);
-  return <div></div>;
+  return <div>
+      {foods.map(food=><Food key={food.id} food={food}/>)}
+  </div>;
 };
 
-export default Food;
+export default Shop;

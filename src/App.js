@@ -1,10 +1,10 @@
-import Food from './components/Foods/Food';
+import Shop from './components/Shop/Shop';
 
 function App() {
 
   return (
     <div>
-      <Food/>
+      <Shop/>
     </div>
   );
 }
