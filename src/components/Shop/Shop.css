@@ -3,6 +3,7 @@
   grid-template-columns: 3fr 1fr;
   gap: 60px;
   padding: 40px;
+  position: relative;
 }
 
 .food-container {
@@ -11,11 +12,41 @@
   gap: 52px;
 }
 
-.cart-container{
+.cart-container {
   background-color: #f1f3f5;
   border-radius: 8px;
   padding: 20px;
-  max-height: 600px;
+  min-height: 200px;
+}
+
+.btn {
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  display: block;
+  border-radius: 100px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .2s;
+  width: 100%;
+}
+
+.btn-choose-one {
+  background-color: #ffd8a8;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.btn-choose-one:hover{
+  background-color: #ffc078;
+}
+
+.btn-choose-again {
+  background-color: #ffa8a8;
+}
+
+.btn-choose-again:hover{
+  background-color:#ff8787 ;
 }
 
 @media (max-width: 576px) {
@@ -27,23 +58,23 @@
     grid-template-columns: 1fr;
   }
 
-  .cart-container{
+  .cart-container {
     grid-row: 1/2;
   }
 
-  .food{
+  .food {
     height: 400px;
   }
 
-  .food img{
+  .food img {
     width: 70%;
   }
 }
-@media (max-width: 450px){
-  .food{
+@media (max-width: 450px) {
+  .food {
     height: 340px;
   }
-  .food img{
+  .food img {
     height: 180px;
   }
 }

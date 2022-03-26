@@ -17,6 +17,10 @@ const Shop = (props) => {
     setCart((prevFood) => [...prevFood, food]);
   };
 
+  const removeCart = ()=>{
+    setCart([]);
+  }
+
   return (
     <div className="shop-container">
       <div className="food-container">
@@ -25,10 +29,7 @@ const Shop = (props) => {
         ))}
       </div>
       <div className="cart-container">
-        <h2>Selected Items</h2>
-        {cart.map((c) => (
-          <Cart key={c.id} item={c} />
-        ))}
+        <Cart cart={cart} onRemoveCart={removeCart}/>
       </div>
     </div>
   );

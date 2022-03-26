@@ -1,18 +1,20 @@
 import React from 'react';
-import { TrashIcon } from '@heroicons/react/solid';
-
 import './Cart.css';
+import CartItem from './CartItem';
 
-const Cart = (props) => {
-  const { id, name, img } = props.item;
+const Cart = ({ cart,onRemoveCart }) => {
   return (
-    <div className="cart-details">
-      <img src={img} alt="" />
-      <p>{name}</p>
-      <button type="button" className="btn-delete">
-        <TrashIcon className="icon" />
+    <>
+      <h2>Selected Items</h2>
+      {cart.map((c) => (
+        <CartItem key={c.id} item={c} />
+      ))}
+      <button className="btn btn-choose-one">Choose 1 for me</button>
+
+      <button className="btn btn-choose-again" onClick={onRemoveCart}>
+        Choose Again
       </button>
-    </div>
+    </>
   );
 };
 
