@@ -11,4 +11,32 @@
   gap: 52px;
 }
 
+@media (max-width: 576px) {
+  .shop-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .food-container {
+    grid-template-columns: 1fr;
+  }
 
+  .cart-container{
+    grid-row: 1/2;
+  }
+
+  .food{
+    height: 400px;
+  }
+
+  .food img{
+    width: 70%;
+  }
+}
+@media (max-width: 450px){
+  .food{
+    height: 340px;
+  }
+  .food img{
+    height: 180px;
+  }
+}

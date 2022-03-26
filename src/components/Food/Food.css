@@ -5,12 +5,16 @@
   position: relative;
 }
 
+.img-box{
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px 0 10px;
+}
+
 .food img {
   width: 100%;
-  height: 70%;
+  height: 260px;
   object-fit: cover;
-  display: block;
-  padding: 10px 10px 0 10px;
 }
 
 .food-info {
@@ -39,9 +43,18 @@
   background-color: #ffdfb9;
   border-top: 1px solid #eee;
   transition: all 0.2s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
 .btn-cart:hover {
-    background-color: #ffc078;
-  }
-  
+  background-color: #ffc078;
+}
+
+.icon-cart {
+  width: 24px;
+  height: 24px;
+}
