@@ -14,12 +14,19 @@ const Shop = (props) => {
   }, []);
 
   const addToCart = (food) => {
-    setCart((prevFood) => [...prevFood, food]);
+    const existItem = cart.find((c) => c.id === food.id);
+
+    if (existItem) {
+      alert('This item is already added');
+    } else {
+      setCart((prevFood) => [...prevFood, food]);
+    }
   };
 
-  const removeCart = ()=>{
+
+  const removeCart = () => {
     setCart([]);
-  }
+  };
 
   return (
     <div className="shop-container">
@@ -29,7 +36,7 @@ const Shop = (props) => {
         ))}
       </div>
       <div className="cart-container">
-        <Cart cart={cart} onRemoveCart={removeCart}/>
+        <Cart cart={cart} onRemoveCart={removeCart} />
       </div>
     </div>
   );

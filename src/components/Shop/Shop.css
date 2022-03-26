@@ -19,35 +19,6 @@
   min-height: 200px;
 }
 
-.btn {
-  border: none;
-  padding: 10px 20px;
-  font-size: 14px;
-  display: block;
-  border-radius: 100px;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: all .2s;
-  width: 100%;
-}
-
-.btn-choose-one {
-  background-color: #ffd8a8;
-  margin-bottom: 10px;
-  margin-top: 20px;
-}
-
-.btn-choose-one:hover{
-  background-color: #ffc078;
-}
-
-.btn-choose-again {
-  background-color: #ffa8a8;
-}
-
-.btn-choose-again:hover{
-  background-color:#ff8787 ;
-}
 
 @media (max-width: 576px) {
   .shop-container {

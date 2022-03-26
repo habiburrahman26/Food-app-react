@@ -1,17 +1,17 @@
+.cart-heading{
+    margin-bottom: 10px;
+}
 .cart-details {
   margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  position: sticky;
-  top: 0;
+  gap: 2px;
 }
 .cart-details img {
   width: 60px;
   border-radius: 50%;
 }
-
 
 .btn-delete {
   border: none;
@@ -22,4 +22,44 @@
 .icon {
   width: 24px;
   height: 24px;
+}
+
+.btn {
+  border: none;
+  padding: 8px 20px;
+  font-size: 14px;
+  display: block;
+  border-radius: 100px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.btn-choose-one {
+  background-color: #ffd8a8;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.btn-choose-one:hover {
+  background-color: #ffc078;
+}
+
+.btn-choose-again {
+  background-color: #ffa8a8;
+}
+
+.btn-choose-again:hover {
+  background-color: #ff8787;
+}
+
+.choose-item{
+    color: #51cf66;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
 }
