@@ -1,6 +1,19 @@
+.cart-details {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart-details img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+
 .btn-delete {
   border: none;
-  background-color: #fff;
+  background-color: #f1f3f5;
+  cursor: pointer;
 }
 
 .icon {

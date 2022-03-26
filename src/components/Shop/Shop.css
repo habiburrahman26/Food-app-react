@@ -11,6 +11,13 @@
   gap: 52px;
 }
 
+.cart-container{
+  background-color: #f1f3f5;
+  border-radius: 8px;
+  padding: 20px;
+  max-height: 600px;
+}
+
 @media (max-width: 576px) {
   .shop-container {
     grid-template-columns: 1fr;
