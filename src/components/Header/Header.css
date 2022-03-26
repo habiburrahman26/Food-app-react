@@ -1,0 +1,36 @@
+.nav-list {
+  background-color: #5c4211e1;
+  color: #fff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 140px;
+}
+
+.nav-list h1 {
+  color: #fab005;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+@media (max-width: 576px) {
+  .nav-list {
+    padding: 15px 20px;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .nav-list h1{
+    text-align: center;
+  }
+}

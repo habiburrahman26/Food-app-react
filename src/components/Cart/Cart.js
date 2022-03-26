@@ -21,13 +21,13 @@ const Cart = ({ cart, onRemoveCart }) => {
   };
 
   return (
-    <>
+    <div className='cart'>
       <h2 className="cart-heading">Selected Items</h2>
       {cart.map((c) => (
         <CartItem key={c.id} item={c} />
       ))}
       <p className="choose-item">
-        <span>{chooseItem}</span>
+        {chooseItem}
       </p>
       <button className="btn btn-choose-one" onClick={ChoseOneForMeHandler}>
         Choose 1 for me
@@ -36,7 +36,7 @@ const Cart = ({ cart, onRemoveCart }) => {
       <button className="btn btn-choose-again" onClick={onClick}>
         Choose Again
       </button>
-    </>
+    </div>
   );
 };
 
