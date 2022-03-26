@@ -18,11 +18,13 @@ const Shop = (props) => {
 
     if (existItem) {
       alert('This item is already added');
+    } else if (cart.length > 3) {
+      alert("You can't select more than 4 items");
     } else {
       setCart((prevFood) => [...prevFood, food]);
     }
-  };
 
+  };
 
   const removeCart = () => {
     setCart([]);

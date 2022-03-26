@@ -6,8 +6,8 @@ const Cart = ({ cart, onRemoveCart }) => {
   const [chooseItem, setChoseItem] = useState('');
 
   const ChoseOneForMeHandler = () => {
-    if (cart.length < 4) {
-      alert('You have to selected at least 4 item');
+    if (cart.length < 2) {
+      alert('You have to selected at least 2 item');
     } else {
       const length = cart.length;
       const random = Math.floor(Math.random() * length);
@@ -21,14 +21,12 @@ const Cart = ({ cart, onRemoveCart }) => {
   };
 
   return (
-    <div className='cart'>
+    <div className="cart">
       <h2 className="cart-heading">Selected Items</h2>
       {cart.map((c) => (
         <CartItem key={c.id} item={c} />
       ))}
-      <p className="choose-item">
-        {chooseItem}
-      </p>
+      <p className="choose-item">{chooseItem}</p>
       <button className="btn btn-choose-one" onClick={ChoseOneForMeHandler}>
         Choose 1 for me
       </button>
