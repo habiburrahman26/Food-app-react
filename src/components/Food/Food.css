@@ -5,7 +5,7 @@
   position: relative;
 }
 
-.img-box{
+.img-box {
   display: flex;
   justify-content: center;
   padding: 10px 10px 0 10px;
@@ -57,4 +57,31 @@
 .icon-cart {
   width: 24px;
   height: 24px;
+}
+
+@media (max-width: 576px) {
+  .food {
+    height: 400px;
+  }
+
+  .food img {
+    width: 70%;
+  }
+
+  .food-name {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+}
+
+@media (max-width: 450px) {
+  .food {
+    height: 340px;
+  }
+  .food img {
+    height: 180px;
+  }
 }

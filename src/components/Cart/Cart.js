@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Cart.css';
 import CartItem from './CartItem';
 
-const Cart = ({ cart, onRemoveCart }) => {
+const Cart = ({ cart, onRemoveCart, onDeleteCart }) => {
   const [chooseItem, setChoseItem] = useState('');
 
   const ChoseOneForMeHandler = () => {
@@ -20,11 +20,15 @@ const Cart = ({ cart, onRemoveCart }) => {
     onRemoveCart();
   };
 
+  const deleteItemHandler = (id) => {
+    onDeleteCart(id);
+  };
+
   return (
     <div className="cart">
       <h2 className="cart-heading">Selected Items</h2>
       {cart.map((c) => (
-        <CartItem key={c.id} item={c} />
+        <CartItem key={c.id} item={c} onDeleteItemHandler={deleteItemHandler} />
       ))}
       <p className="choose-item">{chooseItem}</p>
       <button className="btn btn-choose-one" onClick={ChoseOneForMeHandler}>

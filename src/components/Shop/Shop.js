@@ -30,6 +30,11 @@ const Shop = (props) => {
     setCart([]);
   };
 
+  const deleteItemHandler = (id) => {
+    const filterItem = cart.filter((c) => c.id !== id);
+    setCart(filterItem);
+  };
+
   return (
     <div className="shop-container">
       <div className="food-container">
@@ -38,7 +43,7 @@ const Shop = (props) => {
         ))}
       </div>
       <div className="cart-container">
-        <Cart cart={cart} onRemoveCart={removeCart} />
+        <Cart cart={cart} onRemoveCart={removeCart} onDeleteCart={deleteItemHandler}/>
       </div>
     </div>
   );

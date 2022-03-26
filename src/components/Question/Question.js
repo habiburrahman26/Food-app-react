@@ -29,12 +29,12 @@ const Question = () => {
           </thead>
           <tbody>
             <tr>
-              <td>2</td>
+              <td>1</td>
               <td>State is mutable</td>
               <td>Props are immutable</td>
             </tr>
             <tr>
-              <td>1</td>
+              <td>2</td>
               <td>The Data is passed only the own component.</td>
               <td>The Data is passed from one component to another.</td>
             </tr>

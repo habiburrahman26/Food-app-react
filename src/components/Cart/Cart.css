@@ -70,3 +70,8 @@
   text-align: center;
   gap: 10px;
 }
+@media (max-width:576px){
+  .cart-heading{
+    font-size: 20px;
+  }
+}
